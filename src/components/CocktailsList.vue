@@ -1,4 +1,5 @@
 <script>
+import Details from './Details.vue';
 import axios from "axios";
 
 export default {
@@ -9,6 +10,9 @@ export default {
       currentPage: 1,
       nPages: 0,
     };
+  },
+  components:{
+    Details,
   },
   methods: {
     getCocktails() {
@@ -36,6 +40,7 @@ export default {
 </script>
 
 <template>
+  <Details :id="arrCocktails[0].idDrink"/>
   <h2>Cocktails List</h2>
   <div class="cardContainer row row-cols-4 mb-5">
     <!--  <div
