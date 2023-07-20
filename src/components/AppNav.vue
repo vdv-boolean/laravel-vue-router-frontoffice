@@ -11,6 +11,9 @@ export default {};
           <router-link :to="{ name: 'home' }" class="navbar-brand">Home</router-link>
         </li>
         <li class="nav-item">
+          <router-link :to="{ name: 'cocktails' }" class="navbar-brand">Cocktails</router-link>
+        </li>
+        <li class="nav-item">
           <router-link :to="{ name: 'about' }" class="navbar-brand">About Us</router-link>
         </li>
         <li class="nav-item dropdown">
