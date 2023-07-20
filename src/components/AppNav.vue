@@ -1,12 +1,10 @@
 <script>
-export default {
-
-};
-
+export default {};
 </script>
 
 <template>
-    <h1>ciao</h1>
+  <router-link :to="{ name: 'home' }" class="navbar-brand">Home</router-link>
+  <router-link :to="{ name: 'about' }" class="navbar-brand">About</router-link>
 </template>
 
 <style lang="scss" scoped></style>
