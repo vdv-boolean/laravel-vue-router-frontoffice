@@ -11,6 +11,6 @@ export default {};
 <style lang="scss">
 body {
   background-color: rgb(180, 180, 180);
-  height: 850px;
+  height: calc(100vh - 10rem);
 }
 </style>
