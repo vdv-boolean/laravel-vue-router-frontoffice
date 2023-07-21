@@ -1,0 +1,33 @@
+$background_color2: #E5E5E5;
+$color_facebook: #425893;
+$color_twitter: #6BAAE8;
+$color_instagram: #4B7197;
+$color_youtube: #c33838;
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon_social {
+    font-size: 1.8rem;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.facebook {
+    color: $color_facebook;
+}
+
+.twitter {
+    color: $color_twitter;
+}
+
+.instagram {
+    color: $color_instagram;
+}
+
+.youtube {
+    color: $color_youtube;
+}
