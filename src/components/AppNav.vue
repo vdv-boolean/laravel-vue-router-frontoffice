@@ -38,12 +38,14 @@ export default {};
               Contacts
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">-</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
-              <li><a class="dropdown-item" href="#">-</a></li>
+              <li><a class="dropdown-item" href="#">Vincenzo Di Vita</a></li>
+              <li><a class="dropdown-item" href="#">Andrea Lorenzi</a></li>
+              <li><a class="dropdown-item" href="#">Pierluca Strianese</a></li>
+              <li><a class="dropdown-item" href="#">Irene Caiazzo</a></li>
+              <li><a class="dropdown-item" href="#">Daniele Savoia</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Gary Smith Alvarez Venturo</a>
+              </li>
             </ul>
           </li>
         </ul>
