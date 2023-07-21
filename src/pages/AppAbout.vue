@@ -5,7 +5,7 @@ export default {};
 <template>
   <div class="container mt-5">
     <h1 class="text-center">Booltails Bar</h1>
-    <p class="lead">
+    <p class="lead border-top">
       Benvenuti al Booltails Bar, un luogo unico dove i vostri sensi verranno
       deliziati da un'esperienza saporita e indimenticabile. Situato nel cuore
       della città, il nostro Booltails Bar si distingue per l'eleganza e
