@@ -2,3 +2,21 @@
 .youtube {
     color: $color_youtube;
 }
+
+.dimension_50 {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+    object-fit: cover;
+}
+
+.dimension_100 {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dimension_30 {
+    aspect-ratio: 4 / 3;
+    width: 20%;
+    object-fit: cover;
+}

@@ -4,19 +4,23 @@ export default {};
 
 <template>
   <div class="container mt-5">
-    <h1 class="text-center">Booltails Bar</h1>
-    <p class="lead border-top">
-      Benvenuti al Booltails Bar, un luogo unico dove i vostri sensi verranno
-      deliziati da un'esperienza saporita e indimenticabile. Situato nel cuore
-      della città, il nostro Booltails Bar si distingue per l'eleganza e
-      l'atmosfera accogliente, perfetta per trascorrere momenti piacevoli con
-      gli amici, la famiglia o per una serata romantica.
-    </p>
+    <h1 class="pb-4 text-center border-bottom">Booltails Bar</h1>
+    <section class="d-flex border-bottom py-5">
+      <img src="../img/mooons-rooftop-bar-1 (1).webp" alt="" class="dimension_50">
+      <p class="lead fs-6 pt-2 p-5 m-auto">
+        Benvenuti al Booltails Bar, un luogo unico dove i vostri sensi verranno
+        deliziati da un'esperienza saporita e indimenticabile. Situato nel cuore
+        della città, il nostro Booltails Bar si distingue per l'eleganza e
+        l'atmosfera accogliente, perfetta per trascorrere momenti piacevoli con
+        gli amici, la famiglia o per una serata romantica.
+      </p>
+    </section>
 
-    <div class="row">
+    <div class="row border-bottom">
       <div class="col-md-6">
-        <h3>Ambiente</h3>
-        <p>
+        <h3 class="py-4 text-center">Ambiente</h3>
+        <img src="src/img/ambiente_1.jpeg" alt="" class="dimension_100 pb-3">
+        <p class="lead fs-6 px-2">
           Al varcare la soglia del Booltails Bar, sarete accolti da un ambiente
           raffinato, caratterizzato da un design moderno e sofisticato.
           L'illuminazione soffusa e i dettagli d'arredo curati creano
@@ -25,8 +29,9 @@ export default {};
         </p>
       </div>
       <div class="col-md-6">
-        <h3>Il Menù</h3>
-        <p>
+        <h3 class="py-4 text-center">Il Menù</h3>
+        <img src="src/img/menu_1.jpeg" alt="" class="dimension_100 pb-3">
+        <p class="lead fs-6 px-2">
           Il nostro vasto e creativo menù di cocktail è stato appositamente
           sviluppato da barman esperti e appassionati, pronti a stupirvi con la
           loro arte della mixology. Ogni bevanda è una vera e propria opera
@@ -34,7 +39,7 @@ export default {};
           classiche ricette a quelle innovative, c'è un cocktail adatto ad ogni
           palato.
         </p>
-        <p>
+        <p class="lead fs-6 px-2">
           Oltre ai cocktail, il nostro bar offre una selezione di prelibatezze
           gastronomiche, come stuzzichini gourmet, antipasti sfiziosi e
           deliziosi dessert, perfetti per accompagnare i vostri drink e
@@ -42,17 +47,21 @@ export default {};
         </p>
       </div>
     </div>
-
-    <h3 class="mt-4">Spettacoli e Intrattenimento</h3>
-    <p>
-      Presso il Booltails Bar, l'intrattenimento è una componente fondamentale
-      dell'esperienza. Offriamo regolarmente spettacoli dal vivo, come
-      performance musicali di artisti locali, serate a tema e DJ set che vi
-      faranno ballare fino a tarda notte.
-    </p>
+    <div class="d-flex my-3">
+      <img src="src/img/dj_1.jpeg" alt="" class="dimension_30 pb-3">
+      <section class="mx-3">
+        <h3 class="mt-4">Spettacoli e Intrattenimento</h3>
+        <p class="lead fs-6 px-2">
+          Presso il Booltails Bar, l'intrattenimento è una componente fondamentale
+          dell'esperienza. Offriamo regolarmente spettacoli dal vivo, come
+          performance musicali di artisti locali, serate a tema e DJ set che vi
+          faranno ballare fino a tarda notte.
+        </p>
+      </section>
+    </div>
 
     <h3 class="mt-4">Servizio Clienti</h3>
-    <p>
+    <p class="lead fs-6 px-2">
       Il nostro staff dedicato è sempre pronto ad assistervi e a consigliarvi
       nelle vostre scelte, garantendo un servizio cortese e professionale. Siamo
       aperti a soddisfare eventuali richieste particolari per rendere la vostra
@@ -60,7 +69,7 @@ export default {};
     </p>
 
     <h3 class="mt-4">Eventi Speciali</h3>
-    <p>
+    <p class="lead fs-6 px-2">
       Oltre alle serate di intrattenimento regolari, il nostro Booltails Bar
       organizza anche eventi speciali per celebrare occasioni uniche come feste
       di compleanno, anniversari o altre festività. Vi invitiamo a contattarci
@@ -70,4 +79,6 @@ export default {};
   </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+@use "../style/general.scss" as *;
+</style>
