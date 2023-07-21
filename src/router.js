@@ -5,6 +5,7 @@ import AppHome from "./pages/AppHome.vue";
 import AppAbout from "./pages/AppAbout.vue";
 import App404 from "./pages/App404.vue";
 import CocktailsList from "./components/CocktailsList.vue";
+import AppMail from "./pages/AppMail.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: AppAbout,
+    },
+    {
+      path: "/mail",
+      name: "mail",
+      component: AppMail,
     },
     {
       path: "/:pathMatch(.*)*",
