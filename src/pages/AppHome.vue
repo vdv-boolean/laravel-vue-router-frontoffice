@@ -18,7 +18,7 @@ export default {
 
         <h1 class="p-title">Explore Booltail's collection</h1>
 
-        <CocktailsCard />
+         <CocktailsCard v-for="cocktail in arrCocktails" :key="cocktail.id" :cocktail="cocktail" :nPages="this.currentPage" />
 
         <div class="about-us">
             <h2 class="p-title">Do you want to know more about us?</h2>
@@ -33,7 +33,7 @@ export default {
 </template>
 
 
-<style>
+<style scoped>
 body {
     background-color: #F9F7F4;
 }
