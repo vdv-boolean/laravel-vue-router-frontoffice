@@ -19,15 +19,15 @@ export default {};
           <font-awesome-icon icon="fa-brands fa-square-instagram" class="icon_social instagram" />
         </div>
       </div>
-      <div class="contact_info p-2 text-center">
+      <div class="contact_info p-2 text-end">
         <h5 class="pt-3">Contact infomation</h5>
 
         <ul class="border-top">
           <li class="pt-1">
-            <font-awesome-icon icon="fa-solid fa-location-dot" class="icon_contact" /> street
+            street <font-awesome-icon icon="fa-solid fa-location-dot" class="icon_contact" />
           </li>
           <li>
-            <font-awesome-icon icon="fa-solid fa-phone-flip" class="icon_contact" /> +02 3432 45325432 532
+            +02 3432 45325432 532 <font-awesome-icon icon="fa-solid fa-phone-flip" class="icon_contact" />
           </li>
         </ul>
       </div>
@@ -53,12 +53,11 @@ footer {
     flex-wrap: wrap;
 
     .description {
-      width: 60%;
       width: 40%;
     }
 
     .contact_info {
-      width: 20%;
+      width: 15%;
 
       ul {
         li {
@@ -67,7 +66,7 @@ footer {
 
           .icon_contact {
             color: white;
-            margin-right: 1rem;
+            margin-left: 1rem;
           }
         }
       }
