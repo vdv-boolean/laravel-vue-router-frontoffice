@@ -60,6 +60,7 @@ a {
 .card {
     flex: 0 0 calc((100% - 8rem) / 5);
     border-color: whitesmoke;
+    box-shadow: 0px 0px 20px #dedede;
 
     &:hover {
         cursor: pointer;
