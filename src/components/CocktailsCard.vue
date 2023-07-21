@@ -49,6 +49,25 @@ export default {
             </div>
         </a>
     </div>
+
+      <!-- PAGINATOR -->
+  <nav class="nav_bar">
+    <ul class="pagination">
+      <li class="page-item" :class="{ disabled: currentPage === 1 }">
+        <a class="page-link" href="#" @click="currentPage--">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li v-for="page in nPages" :key="page" class="page-item" :class="{ active: page === currentPage }">
+        <a class="page-link" href="#" @click="currentPage = page">{{ page }}</a>
+      </li>
+      <li class="page-item" :class="{ disabled: currentPage === nPages }">
+        <a class="page-link" href="#" @click="currentPage++">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="scss" scoped>

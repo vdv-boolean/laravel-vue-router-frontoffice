@@ -1,7 +1,7 @@
 <script>
 import Details from './Details.vue';
 import CocktailsCard from './CocktailsCard.vue';
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "ProjectList",
@@ -17,55 +17,34 @@ export default {
     CocktailsCard
   },
   methods: {
-    getCocktails() {
-      axios
-        .get("http://127.0.0.1:8000/api/cocktails", {
-          params: {
-            page: this.currentPage,
-          },
-        }) // api link
-        .then((response) => {
-          this.arrCocktails = response.data.data;
-          this.nPages = response.data.last_page;
-        });
-    },
+    // getCocktails() {
+    //   axios
+    //     .get("http://127.0.0.1:8000/api/cocktails", {
+    //       params: {
+    //         page: this.currentPage,
+    //       },
+    //     }) // api link
+    //     .then((response) => {
+    //       this.arrCocktails = response.data.data;
+    //       this.nPages = response.data.last_page;
+    //     });
+    // },
   },
   watch: {
     currentPage() {
-      this.getCocktails();
+      // this.getCocktails();
     },
   },
   created() {
-    this.getCocktails();
+    // this.getCocktails();
   },
 };
 </script>
 
 <template>
-  <Details :id="arrCocktails[0].idDrink" />
-  <h1 class="pt-5 text-center">Cocktails List</h1>
-  <div class=" big_container mb-5 border-top">
-    <CocktailsCard />
-  </div>
 
-  <!-- PAGINATOR -->
-  <nav class="nav_bar">
-    <ul class="pagination">
-      <li class="page-item" :class="{ disabled: currentPage === 1 }">
-        <a class="page-link" href="#" @click="currentPage--">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li v-for="page in nPages" :key="page" class="page-item" :class="{ active: page === currentPage }">
-        <a class="page-link" href="#" @click="currentPage = page">{{ page }}</a>
-      </li>
-      <li class="page-item" :class="{ disabled: currentPage === nPages }">
-        <a class="page-link" href="#" @click="currentPage++">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <CocktailsCard />
+ 
 </template>
 
 <style lang="scss" scoped>
