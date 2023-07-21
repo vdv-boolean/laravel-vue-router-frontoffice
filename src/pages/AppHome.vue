@@ -16,9 +16,18 @@ export default {
 
     <div class="container">
 
-        <h1 class="p-title">Explore Booltail's collection</h1>
+        <div class="title">
+            <h1 class="p-title">Explore Booltail's collection</h1>
+            <div>
+                <router-link :to="{ name: 'cocktails' }" class="navbar-brand">Our Cocktails</router-link>
 
-         <CocktailsCard v-for="cocktail in arrCocktails" :key="cocktail.id" :cocktail="cocktail" :nPages="this.currentPage" />
+            </div>
+
+        </div>
+
+
+        <CocktailsCard v-for="cocktail in arrCocktails" :key="cocktail.id" :cocktail="cocktail"
+            :nPages="this.currentPage" />
 
         <div class="about-us">
             <h2 class="p-title">Do you want to know more about us?</h2>
@@ -53,7 +62,13 @@ body {
 
 }
 
-.p-title {
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
     margin-bottom: 6rem;
 }
 
