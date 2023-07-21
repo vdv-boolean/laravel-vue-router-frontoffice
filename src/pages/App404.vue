@@ -8,7 +8,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
   background-color: rgb(180, 180, 180);
   height: calc(100vh - 10rem);
