@@ -1,73 +1,49 @@
 <script>
 import Details from './Details.vue';
-import axios from "axios";
 
 export default {
     name: "CocktailList",
     data() {
         return {
             arrCocktails: [],
-            currentPage: 1,
+            currentPage: this.nPages,
             nPages: 0,
         };
     },
+
+    props: {
+        cocktail: {
+            type: Object,
+            required: true,
+        },
+    },
+
     components: {
         Details,
     },
-    methods: {
-        getCocktails() {
-            axios
-                .get("http://127.0.0.1:8000/api/cocktails", {
-                    params: {
-                        page: this.currentPage,
-                    },
-                }) // api link
-                .then((response) => {
-                    this.arrCocktails = response.data.data;
-                    this.nPages = response.data.last_page;
-                });
-        },
-    },
+
     watch: {
         currentPage() {
-            this.getCocktails();
         },
     },
     created() {
-        this.getCocktails();
     },
 };
 </script>
 
 <template>
-    <div class="card d-flex" style="width: 18rem;" v-for="cocktail in arrCocktails" :key="cocktail.id">
+    <div class="card d-flex" style="width: 18rem;">
         <a href="#">
             <img :src="cocktail.image" class="card-img-top" :alt="cocktail.name">
+            <div class="tag py-2 border-bottom">
+                <a class="text-center"> tipologia di Cocktails</a>
+            </div>
             <div class="card-body">
                 <h3 class="card-title text-center text_font">{{ cocktail.name }}</h3>
                 <p class="card-text"></p>
             </div>
         </a>
     </div>
-
-      <!-- PAGINATOR -->
-  <nav class="nav_bar">
-    <ul class="pagination">
-      <li class="page-item" :class="{ disabled: currentPage === 1 }">
-        <a class="page-link" href="#" @click="currentPage--">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li v-for="page in nPages" :key="page" class="page-item" :class="{ active: page === currentPage }">
-        <a class="page-link" href="#" @click="currentPage = page">{{ page }}</a>
-      </li>
-      <li class="page-item" :class="{ disabled: currentPage === nPages }">
-        <a class="page-link" href="#" @click="currentPage++">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
 </template>
 
 <style lang="scss" scoped>
@@ -87,9 +63,17 @@ a {
         border-color: rgb(225, 225, 225);
     }
 
+    .tag {
+        text-align: center;
+        font-size: .8rem;
+        background-color: #fbfbfb;
+    }
+
     .text_font {
         font-size: 1rem;
         font-weight: 100;
     }
+
+
 }
 </style>
