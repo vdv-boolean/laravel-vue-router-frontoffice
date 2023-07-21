@@ -42,9 +42,10 @@ export default {
 </script>
 
 <template>
-
+  <h1 class="pt-5 text-center">Cocktails List</h1>
+  <div class=" big_container mb-5 border-top">
     <CocktailsCard />
- 
+  </div>
 </template>
 
 <style lang="scss" scoped>
