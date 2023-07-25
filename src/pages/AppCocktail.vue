@@ -1,10 +1,10 @@
 <script>
 
-import CocktailList from '../components/CocktailList.vue';
+import CocktailsList from '../components/CocktailsList.vue';
 
 export default {
     components: {
-        CocktailList,
+        CocktailsList,
     },
 }
 
@@ -12,7 +12,7 @@ export default {
 
 <template>
 
-<CocktailList />
+<CocktailsList />
 
 </template>
 
