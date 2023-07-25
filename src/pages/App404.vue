@@ -11,6 +11,6 @@ export default {};
 <style lang="scss" scoped>
 body {
   background-color: rgb(180, 180, 180);
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 21.5rem);
 }
 </style>
