@@ -25,8 +25,9 @@ export default {
 
         </div>
 
-
-        <CocktailsList :showOnly5="true" />
+        <div class="big_container">
+            <CocktailsList :showOnly5="true" />
+        </div>
 
         <div class="about-us">
             <h2 class="p-title">Do you want to know more about us?</h2>
@@ -67,10 +68,6 @@ body {
     justify-content: space-between;
 }
 
-.title {
-    margin-bottom: 6rem;
-}
-
 .about-us {
     text-align: right;
 }
@@ -86,35 +83,36 @@ body {
 }
 
 .big_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-inline: auto;
-  padding-top: 5rem;
-  max-width: 1000px;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-inline: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1000px;
+    gap: 1rem;
 }
 
 .card_Container {
-  width: calc(100%/5);
+    width: calc(100%/5);
 }
 
 .nav_bar {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  a {
-    color: rgb(180, 180, 180);
-  }
+    a {
+        color: rgb(180, 180, 180);
+    }
 }
 
 .big_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-inline: auto;
-  padding-top: 5rem;
-  max-width: 1000px;
-  gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-inline: auto;
+    padding-top: 5rem;
+    max-width: 1000px;
+    gap: 1rem;
 }
 </style>
