@@ -84,4 +84,37 @@ body {
     color: white;
     margin-right: 3rem;
 }
+
+.big_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  padding-top: 5rem;
+  max-width: 1000px;
+  gap: 1rem;
+}
+
+.card_Container {
+  width: calc(100%/5);
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: rgb(180, 180, 180);
+  }
+}
+
+.big_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  padding-top: 5rem;
+  max-width: 1000px;
+  gap: 1rem;
+}
 </style>
