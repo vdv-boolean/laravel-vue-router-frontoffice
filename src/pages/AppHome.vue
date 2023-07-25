@@ -1,9 +1,9 @@
 <script>
-import CocktailsCard from '../components/CocktailsCard.vue';
+import CocktailsList from '../components/CocktailsList.vue';
 
 export default {
     components: {
-        CocktailsCard,
+        CocktailsList,
     },
 };
 </script>
@@ -26,8 +26,7 @@ export default {
         </div>
 
 
-        <CocktailsCard v-for="cocktail in arrCocktails" :key="cocktail.id" :cocktail="cocktail"
-            :nPages="this.currentPage" />
+        <CocktailsList :showOnly5="true" />
 
         <div class="about-us">
             <h2 class="p-title">Do you want to know more about us?</h2>
