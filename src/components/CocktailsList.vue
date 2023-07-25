@@ -15,6 +15,9 @@ export default {
       store,
     };
   },
+  props: {
+    showOnly5: Boolean,
+  },
   components: {
     Details,
     CocktailsCard,
@@ -33,6 +36,16 @@ export default {
         });
     },
   },
+  computed: {
+    getSlicedCocktails() {
+      if (this.showOnly5 == true) {
+        return this.arrCocktails.slice(0, 5)
+      } else {
+        return this.arrCocktails
+      }
+
+    }
+  },
   watch: {
     currentPage() {
       this.getCocktails();
@@ -50,7 +63,8 @@ export default {
 <template>
   <h1 class="pt-5 text-center">Cocktails List</h1>
   <div class=" big_container mb-5 border-top">
-    <CocktailsCard v-for="cocktail in arrCocktails" :key="cocktail.id" :cocktail="cocktail" :nPages="this.currentPage" />
+    <CocktailsCard v-for="cocktail in getSlicedCocktails" :key="cocktail.id" :cocktail="cocktail"
+      :nPages="this.currentPage" />
   </div>
 
   <!-- PAGINATOR -->
